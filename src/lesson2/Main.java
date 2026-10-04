@@ -25,32 +25,32 @@ public class Main {
         double doubleGet2 = holder.getDoubleValue();
         System.out.println("Значения после изменения Double: " + doubleGet2);
 
-        double dGet = holder.getdValue();
+        double dGet = holder.getDValue();
         System.out.println("\nЗначение до изменения double: " + dGet);
-        holder.setdValue(23.24); // изменение значения double
-        double dGet2 = holder.getdValue(); //надо примитивный double или Double и почему
+        holder.setDValue(23.24); // изменение значения double
+        double dGet2 = holder.getDValue(); //надо примитивный double или Double и почему
         System.out.println("Значения после изменения double через переменную: " + dGet2); //не изменилось
-        System.out.println("Значения после изменения double напрямую: " + holder.getdValue()); //не изменилось
+        System.out.println("Значения после изменения double напрямую: " + holder.getDValue()); //не изменилось
 
         Character characterGet = holder.getCharacterValue();
         System.out.println("\nЗначение до изменения Character: " + characterGet);
         holder.setCharacterValue((char) 245);// без приведения ошибка
         System.out.println("Значения после изменения Character напрямую: " + holder.getCharacterValue());
 
-        char cGet = holder.getcValue();
+        char cGet = holder.getCValue();
         System.out.println("\nЗначение до изменения char: " + cGet);
-        holder.setcValue('с');// без приведения ошибка
-        System.out.println("Значения после изменения char напрямую: " + holder.getcValue());
+        holder.setCValue('с');// без приведения ошибка
+        System.out.println("Значения после изменения char напрямую: " + holder.getCValue());
 
         int integerGet = holder.getIntegerValue();
         System.out.println("\nЗначение до изменения Integer: " + integerGet);
         holder.setIntegerValue(245123);
         System.out.println("Значения после изменения Integer напрямую: " + holder.getIntegerValue());
 
-        int iGet = holder.getiValue();
+        int iGet = holder.getIValue();
         System.out.println("\nЗначение до изменения int: " + iGet);
-        holder.setiValue(245123);
-        System.out.println("Значения после изменения int напрямую: " + holder.getiValue());
+        holder.setIValue(245123);
+        System.out.println("Значения после изменения int напрямую: " + holder.getIValue());
 
         System.out.println("\nПриведение типов");
         //Расширение(неявное)
@@ -90,20 +90,20 @@ public class Main {
         System.out.println("\nВывод всех переменных");
         System.out.println("\nПеременные класса DataHolder:");
         System.out.println("DataHolder.byteValue = "+ holder.getByteValue());
-        System.out.println("DataHolder.bValue = "+ holder.getbValue());
+        System.out.println("DataHolder.bValue = "+ holder.getBValue());
         System.out.println("DataHolder.shortValue = "+ holder.getShortValue());
-        System.out.println("DataHolder.sValue = "+ holder.getsValue());
+        System.out.println("DataHolder.sValue = "+ holder.getSValue());
         System.out.println("DataHolder.integerValue = "+ holder.getIntegerValue());
-        System.out.println("DataHolder.iValue = "+ holder.getiValue());
+        System.out.println("DataHolder.iValue = "+ holder.getIValue());
         System.out.println("DataHolder.longValue = "+ holder.getLongValue());
-        System.out.println("DataHolder.lValue = "+ holder.getlValue());
+        System.out.println("DataHolder.lValue = "+ holder.getLValue());
         System.out.println("DataHolder.floatValue = "+ holder.getFloatValue());
-        System.out.println("DataHolder.fValue = "+ holder.getfValue());
+        System.out.println("DataHolder.fValue = "+ holder.getFValue());
         System.out.println("DataHolder.doubleValue = "+ holder.getDoubleValue());
-        System.out.println("DataHolder.dValue = "+ holder.getdValue());
+        System.out.println("DataHolder.dValue = "+ holder.getDValue());
         System.out.println("DataHolder.characterValue = "+ holder.getCharacterValue());
-        System.out.println("DataHolder.boolValue = "+ holder.getBoolValue());
-        System.out.println("DataHolder.booValue = "+ holder.getBooValue());
+        System.out.println("DataHolder.boolValue = "+ holder.getBooleanValue());
+        System.out.println("DataHolder.booValue = "+ holder.isBoolValue()); //is вместо get
 
         System.out.println("\nПеременные класса Main:");
         //Глобальные
@@ -118,15 +118,6 @@ public class Main {
         System.out.println("lValue3 = "+ lValue3);
         System.out.println("dValue3 = "+ dValue3);
         System.out.println("byteValue3 = "+ byteValue3);
-
-
-
-
-
-
-
-
-
 
     }
 }
