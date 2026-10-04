@@ -17,7 +17,7 @@ public class Main {
         byte byteValue3 = 12;
 
         DataHolder holder = new DataHolder();
-        System.out.println("Переменные до изменения: ");
+        System.out.println("Переменные класса DataHolder до изменения: ");
         System.out.println(holder.toString());
         double doubleGet = holder.getDoubleValue();
         System.out.println("\nЗначение до изменения Double: " + doubleGet);
