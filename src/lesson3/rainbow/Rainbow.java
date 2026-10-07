@@ -3,25 +3,25 @@ package lesson3.rainbow;
 public class Rainbow {
 
 
-    public static final int RED = 1; //красный
-    public static final double RED_ORANGE = 1.5; //красно-оранжевый
-    public static final int ORANGE = 2; //оранжевый
-    public static final double ORANGE_YELLOW = 2.5; //оранжево-жёлтый
-    public static final int YELLOW = 3; //жёлтый
-    public static final double YELLOW_GREEN = 3.5; //жёлто-зелёный
-    public static final int GREEN = 4; //зелёный
-    public static final double GREEN_LIGHT_BLUE = 4.5; //зелёно-голубой
-    public static final int LIGHT_BLUE = 5; //голубой
-    public static final double LIGHT_BLUE_BLUE = 5.5; //голубо-синий
-    public static final int BLUE = 6; //синий
-    public static final double BLUE_PURPLE = 6.5; //сине-фиолетовый
-    public static final int PURPLE = 7; //фиолетовый
+    private static final int RED = 1; //красный
+    private static final double RED_ORANGE = 1.5; //красно-оранжевый
+    private static final int ORANGE = 2; //оранжевый
+    private static final double ORANGE_YELLOW = 2.5; //оранжево-жёлтый
+    private static final int YELLOW = 3; //жёлтый
+    private static final double YELLOW_GREEN = 3.5; //жёлто-зелёный
+    private static final int GREEN = 4; //зелёный
+    private static final double GREEN_LIGHT_BLUE = 4.5; //зелёно-голубой
+    private static final int LIGHT_BLUE = 5; //голубой
+    private static final double LIGHT_BLUE_BLUE = 5.5; //голубо-синий
+    private static final int BLUE = 6; //синий
+    private static final double BLUE_PURPLE = 6.5; //сине-фиолетовый
+    private static final int PURPLE = 7; //фиолетовый
 
 
     public void printColor(double color) {
 
         if(color%1==0){
-            printPrimaryColor((int)color);
+                printPrimaryColor((int) color);
         } else if (color%1==0.5) {
             printMixedColor((int)color);
         }
