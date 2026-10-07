@@ -11,8 +11,9 @@ public class Main {
         System.out.println("Приветствуем вас в приложении Радуга.\nВведите номер от 1 до 7, если хотите получить основные цвета\n" +
                 "Введите цифру(от 1 до 6) + 0,5, если хотите получить смешанный цвет (при вводе дробного числа разделять цельную часть с дробной запятой(,).  ");
 
-        double color = scanner.nextDouble();
         Rainbow rainbow = new Rainbow();
+        rainbow.printAllColors();
+        double color = scanner.nextDouble();
         rainbow.printColor(color);
 
 

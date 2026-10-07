@@ -4,17 +4,17 @@ public class Rainbow {
 
 
     public static final int RED = 1; //красный
-    //1.5 красно-оранжевый
+    public static final double RED_ORANGE = 1.5; //красно-оранжевый
     public static final int ORANGE = 2; //оранжевый
-    //2.5 оранжево-жёлтый
+    public static final double ORANGE_YELLOW = 2.5; //оранжево-жёлтый
     public static final int YELLOW = 3; //жёлтый
-    //3.5 жёлто-зелёный
+    public static final double YELLOW_GREEN = 3.5; //жёлто-зелёный
     public static final int GREEN = 4; //зелёный
-    //4.5 зелёно-голубой
+    public static final double GREEN_LIGHT_BLUE = 4.5; //зелёно-голубой
     public static final int LIGHT_BLUE = 5; //голубой
-    //5.5 голубо-синий
+    public static final double LIGHT_BLUE_BLUE = 5.5; //голубо-синий
     public static final int BLUE = 6; //синий
-    //6.5 сине-фиолетовый
+    public static final double BLUE_PURPLE = 6.5; //сине-фиолетовый
     public static final int PURPLE = 7; //фиолетовый
 
 
@@ -100,6 +100,23 @@ public class Rainbow {
                 System.out.println("Смешанного цвета под номером " + color + " нет или он находится в разработке ");
             }
         }
+    }
+
+    public void printAllColors(){
+        System.out.println("Все цвета радуги по порядку");
+        System.out.println("Номер "+ RED + " - красный цвет\n"+
+         "Номер "+ RED_ORANGE + " - красно-оранжевый цвет\n"+
+                "Номер "+ ORANGE + " - оранжевый цвет\n"+
+                "Номер "+ ORANGE_YELLOW + " - оранжево-жёлтый цвет\n"+
+                "Номер "+ YELLOW + " - жёлтый цвет\n"+
+                "Номер "+ YELLOW_GREEN + " - жёлто-зелёный цвет\n"+
+                "Номер "+ GREEN + " - зелёный цвет\n"+
+                "Номер "+ GREEN_LIGHT_BLUE + " - зелёно-голубой цвет\n"+
+                "Номер "+ LIGHT_BLUE + " - голубой цвет\n"+
+                "Номер "+ LIGHT_BLUE_BLUE + " - голубо-синий цвет\n"+
+                "Номер "+ BLUE + " - синий цвет\n"+
+                "Номер "+ BLUE_PURPLE + " - сине-фиолетовый цвет\n"+
+                "Номер "+ PURPLE + " - фиолетовый цвет\n");
 
     }
 }
