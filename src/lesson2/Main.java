@@ -28,7 +28,7 @@ public class Main {
         double dGet = holder.getDValue();
         System.out.println("\nЗначение до изменения double: " + dGet);
         holder.setDValue(23.24); // изменение значения double
-        double dGet2 = holder.getDValue(); //надо примитивный double или Double и почему
+        Double dGet2 = holder.getDValue(); //надо примитивный double или Double и почему
         System.out.println("Значения после изменения double через переменную: " + dGet2); //не изменилось
         System.out.println("Значения после изменения double напрямую: " + holder.getDValue()); //не изменилось
 
