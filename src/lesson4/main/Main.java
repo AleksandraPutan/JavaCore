@@ -8,11 +8,12 @@ import java.util.Random;
 
 public class Main {
 
+    public static Random random = new Random();
+
     public static String randomString() {
         char[] arrayRandom = new char[7];
-        Random r = new Random();
         for (int i = 0; i < arrayRandom.length; i++) {
-            int randChar = r.nextInt(1040, 1103);
+            int randChar = random.nextInt(1040, 1103);
             arrayRandom[i] = (char) randChar;
 
         }
@@ -21,7 +22,7 @@ public class Main {
     }
 
     public static String randomCatName(){
-        Random random = new Random();
+
 
         String[] nameCatsArray= {"Муся","Барсик","Кутя","Жужа","Мотя","Клёпа",
                 "Рыжик","Масяня","Пятнышко","Дружок","Кот"};
@@ -32,7 +33,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Random random = new Random();
 
         System.out.println("Вывод цикла while");
         int i = 0;
