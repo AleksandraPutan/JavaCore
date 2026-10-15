@@ -13,6 +13,7 @@ public class Main {
     public static String randomString() {
         char[] arrayRandom = new char[7];
         for (int i = 0; i < arrayRandom.length; i++) {
+
             int randChar = random.nextInt(1040, 1103);
             arrayRandom[i] = (char) randChar;
 
@@ -22,7 +23,6 @@ public class Main {
     }
 
     public static String randomCatName(){
-
 
         String[] nameCatsArray= {"Муся","Барсик","Кутя","Жужа","Мотя","Клёпа",
                 "Рыжик","Масяня","Пятнышко","Дружок","Кот"};
