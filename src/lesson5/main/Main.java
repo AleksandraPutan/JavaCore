@@ -7,6 +7,8 @@ import java.util.regex.Pattern;
 
 public class Main {
 
+    // Я не использовала Double.parseDouble, а второй массив для double, чтобы не потерять 0.
+
     static Random random = new Random();
     static int counter = 0;
 
@@ -48,7 +50,6 @@ public class Main {
     public static void main(String[] args) {
 
         StringBuilder stringBuilder = new StringBuilder("лабуба");
-        stringBuilder.append("dfg");
 
         Pattern pattern = Pattern.compile("^[A-Za-z]{7}$");
         Matcher matcher = pattern.matcher(stringBuilder);
@@ -107,7 +108,6 @@ public class Main {
         for (int i = 0; i < 20; i++) {
 
             System.out.printf(objectsNew[i].toString() + " ");
-
 
         }
 
