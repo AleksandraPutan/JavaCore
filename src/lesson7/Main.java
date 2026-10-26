@@ -9,6 +9,8 @@ public class Main {
     static Veterinarian vet = new Veterinarian();
 
     public static void main(String[] args) {
+        System.out.println("Имя клиники"+Veterinarian.CLINIC_NAME);
+
         Animal [] animals = {new Dog("Корм","Дом","Кавалер спаниель"),new Dog("Косточки","Будка","Дворняжка"),
                 new Cat("Молоко","Улица",true), new Cat(false), new Horse("Морковка","Конюшня",220),
                 new Horse(200)};
@@ -34,6 +36,9 @@ public class Main {
         }
 
         System.out.println("Итог:\nСобак: "+countDog+"\nКошек: "+countCat+"\nЛошадей: "+countHorse);
+        System.out.println("Итого всего животных с помощью статического счётчика: "+Animal.getCounter());
     }
+
+
 
 }

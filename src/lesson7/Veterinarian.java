@@ -2,6 +2,8 @@ package lesson7;
 
 public class Veterinarian {
 
+    public static final String CLINIC_NAME = "Добрый доктор";
+
     public void treatAnimal(Animal animal){
         System.out.println("На приёме: food="+ animal.getFood()+", location ="+ animal.getLocation());
     }
