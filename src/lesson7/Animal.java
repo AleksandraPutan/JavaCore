@@ -4,13 +4,12 @@ import java.util.Objects;
 
 public class Animal {
 
+    private static int counter;
     private String food;
     private String location;
 
     public void makeNoise(){
-
         System.out.println(this.getClass().getSimpleName()+" издаёт звук");
-
     }
 
     public void eat(){
@@ -20,11 +19,16 @@ public class Animal {
     public void sleep(){
         System.out.println(this.getClass().getSimpleName()+" спит");
     }
-    public Animal(){}
+    public Animal(){counter++;}
+
+    public static int getCounter() {
+        return counter;
+    }
 
     public Animal(String food, String location) {
         this.food = food;
         this.location = location;
+        counter++;
     }
 
     @Override
