@@ -2,6 +2,7 @@ package lesson8;
 
 import lesson8.Body.BodyChoice;
 import lesson8.Head.HeadChoice;
+import lesson9.Body.BodyChoice1;
 
 public class Robot {
     public static int count = 0;
@@ -38,6 +39,9 @@ public class Robot {
 
         public Body(BodyChoice type) {
             this.type = type;
+        }
+
+        public Body(BodyChoice1 bodyChoice) {
         }
 
         public BodyChoice getType() {
