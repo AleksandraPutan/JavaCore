@@ -13,6 +13,7 @@ public class Cat extends Animal{
         this.isIndoor = isIndoor;
     }
 
+
     @Override
     public void makeNoise(){
         System.out.println(this.getClass().getSimpleName()+" мяукает: Мяу!");
